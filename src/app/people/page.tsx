@@ -1,0 +1,48 @@
+import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
+import { site } from "@/data/site";
+
+export const metadata: Metadata = { title: "People" };
+
+export default function PeoplePage() {
+  return (
+    <>
+      <PageHero title="People" subtitle="구성원" />
+      <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
+        <h2 className="text-lg font-bold text-slate-900">
+          Principal Investigator
+        </h2>
+        <div className="mt-6 flex flex-col gap-6 rounded-lg border border-slate-200 p-6 sm:flex-row sm:items-center">
+          <div className="h-28 w-28 shrink-0 rounded-full bg-slate-200" />
+          <div>
+            <p className="text-lg font-semibold text-slate-900">
+              {site.piNameKo} {site.piTitleKo}
+            </p>
+            <p className="text-sm text-slate-500">
+              {site.piNameEn}, {site.piTitleEn}
+            </p>
+            <p className="mt-2 text-sm text-slate-600">
+              {site.universityKo} {site.departmentKo}
+            </p>
+            <p className="mt-1 text-sm text-slate-600">
+              <a href={`mailto:${site.email}`} className="text-blue-800 hover:underline">
+                {site.email}
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <h2 className="mt-16 text-lg font-bold text-slate-900">
+          Lab Members
+        </h2>
+        <p className="mt-4 text-sm text-slate-500">
+          함께할 대학원생/학부연구생을 모집 중입니다. 관심 있는 분은{" "}
+          <a href="/contact" className="text-blue-800 hover:underline">
+            연락처
+          </a>
+          를 통해 문의해 주세요.
+        </p>
+      </section>
+    </>
+  );
+}
