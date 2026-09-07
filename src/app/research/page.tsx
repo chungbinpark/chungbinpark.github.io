@@ -23,7 +23,7 @@ export default function ResearchPage() {
     <>
       <PageHero title="Research" subtitle="Research Areas" />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-        <p className="text-base leading-relaxed text-slate-600">
+        <p className="text-lg leading-relaxed text-slate-600">
           The Computational Chemistry Lab uses molecular dynamics (MD)
           simulations to investigate the dynamics of soft matter, ionic
           materials, and biopolymers at the atomic and molecular scale. We aim
@@ -35,8 +35,8 @@ export default function ResearchPage() {
         <div className="mt-12 space-y-10">
           {topics.map((t) => (
             <div key={t.title} className="border-l-4 border-blue-700 pl-6">
-              <h2 className="text-lg font-bold text-slate-900">{t.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              <h2 className="text-xl font-bold text-slate-900">{t.title}</h2>
+              <p className="mt-2 text-base leading-relaxed text-slate-600">
                 {t.body}
               </p>
             </div>

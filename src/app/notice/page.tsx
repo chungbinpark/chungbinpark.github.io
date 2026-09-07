@@ -11,7 +11,7 @@ export default function NoticePage() {
     <>
       <PageHero title="Notice" subtitle="Announcements" />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-        <table className="w-full border-t border-slate-900 text-sm">
+        <table className="w-full border-t border-slate-900 text-base">
           <thead>
             <tr className="border-b border-slate-200 text-slate-500">
               <th className="w-16 py-3 text-left font-medium">No.</th>

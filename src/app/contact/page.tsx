@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <PageHero title="Contact" subtitle="Get in Touch" />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-        <dl className="space-y-6 text-sm">
+        <dl className="space-y-6 text-base">
           <div>
             <dt className="font-semibold text-slate-900">Affiliation</dt>
             <dd className="mt-1 text-slate-600">
