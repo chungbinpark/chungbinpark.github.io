@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "People" };
 export default function PeoplePage() {
   return (
     <>
-      <PageHero title="People" subtitle="구성원" />
+      <PageHero title="People" subtitle="Members" />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <h2 className="text-lg font-bold text-slate-900">
           Principal Investigator
@@ -16,16 +16,13 @@ export default function PeoplePage() {
           <div className="h-28 w-28 shrink-0 rounded-full bg-slate-200" />
           <div>
             <p className="text-lg font-semibold text-slate-900">
-              {site.piNameKo} {site.piTitleKo}
-            </p>
-            <p className="text-sm text-slate-500">
-              {site.piNameEn}, {site.piTitleEn}
+              {site.piName}, {site.piTitle}
             </p>
             <p className="mt-2 text-sm text-slate-600">
-              {site.universityKo} {site.departmentKo}
+              {site.university}, {site.department}
             </p>
             <p className="mt-1 text-sm text-slate-600">
-              <a href={`mailto:${site.email}`} className="text-blue-800 hover:underline">
+              <a href={`mailto:${site.email}`} className="text-blue-700 hover:underline">
                 {site.email}
               </a>
             </p>
@@ -36,11 +33,13 @@ export default function PeoplePage() {
           Lab Members
         </h2>
         <p className="mt-4 text-sm text-slate-500">
-          함께할 대학원생/학부연구생을 모집 중입니다. 관심 있는 분은{" "}
-          <a href="/contact" className="text-blue-800 hover:underline">
-            연락처
+          We are currently recruiting graduate and undergraduate researchers.
+          If you are interested in joining the lab, please get in touch via
+          the{" "}
+          <a href="/contact" className="text-blue-700 hover:underline">
+            contact page
           </a>
-          를 통해 문의해 주세요.
+          .
         </p>
       </section>
     </>

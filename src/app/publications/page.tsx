@@ -19,19 +19,19 @@ export default function PublicationsPage() {
 
   return (
     <>
-      <PageHero title="Publications" subtitle="논문" />
+      <PageHero title="Publications" subtitle="Peer-reviewed Articles" />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <p className="text-sm text-slate-500">
-          전체 논문 목록은{" "}
+          The full list of publications is also available on{" "}
           <a
             href={site.scholarUrl}
-            className="text-blue-800 hover:underline"
+            className="text-blue-700 hover:underline"
             target="_blank"
             rel="noreferrer"
           >
             Google Scholar
           </a>
-          에서도 확인하실 수 있습니다.
+          .
         </p>
 
         <div className="mt-10 space-y-12">

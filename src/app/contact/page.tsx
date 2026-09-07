@@ -7,19 +7,21 @@ export const metadata: Metadata = { title: "Contact" };
 export default function ContactPage() {
   return (
     <>
-      <PageHero title="Contact" subtitle="문의" />
+      <PageHero title="Contact" subtitle="Get in Touch" />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <dl className="space-y-6 text-sm">
           <div>
-            <dt className="font-semibold text-slate-900">소속</dt>
+            <dt className="font-semibold text-slate-900">Affiliation</dt>
             <dd className="mt-1 text-slate-600">
-              {site.universityKo} {site.departmentKo} ({site.universityEn})
+              {site.department}, {site.university}
             </dd>
           </div>
           <div>
-            <dt className="font-semibold text-slate-900">담당교수</dt>
+            <dt className="font-semibold text-slate-900">
+              Principal Investigator
+            </dt>
             <dd className="mt-1 text-slate-600">
-              {site.piNameKo} {site.piTitleKo} ({site.piNameEn}, {site.piTitleEn})
+              {site.piName}, {site.piTitle}
             </dd>
           </div>
           <div>
@@ -27,7 +29,7 @@ export default function ContactPage() {
             <dd className="mt-1">
               <a
                 href={`mailto:${site.email}`}
-                className="text-blue-800 hover:underline"
+                className="text-blue-700 hover:underline"
               >
                 {site.email}
               </a>
@@ -40,7 +42,7 @@ export default function ContactPage() {
                 href={site.github}
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-800 hover:underline"
+                className="text-blue-700 hover:underline"
               >
                 {site.github}
               </a>

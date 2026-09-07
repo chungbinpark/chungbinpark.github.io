@@ -14,9 +14,9 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex flex-col leading-tight">
           <span className="text-sm font-bold tracking-tight text-slate-900">
-            {site.nameKo}
+            {site.name}
           </span>
-          <span className="text-[11px] text-slate-500">{site.nameEn}</span>
+          <span className="text-[11px] text-slate-500">{site.universityAbbr}</span>
         </Link>
 
         <nav className="hidden gap-8 md:flex">
@@ -29,10 +29,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-base font-medium transition-colors ${
                   active
-                    ? "text-blue-800"
-                    : "text-slate-600 hover:text-blue-800"
+                    ? "text-blue-700"
+                    : "text-slate-600 hover:text-blue-700"
                 }`}
               >
                 {item.label}
@@ -60,7 +60,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="border-b border-slate-100 py-3 text-sm font-medium text-slate-700 last:border-none"
+              className="border-b border-slate-100 py-3 text-base font-medium text-slate-700 last:border-none"
             >
               {item.label}
             </Link>
