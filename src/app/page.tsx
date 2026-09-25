@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MoleculePattern from "@/components/MoleculePattern";
+import HeroGraphic from "@/components/HeroGraphic";
 import { site } from "@/data/site";
 import { notices } from "@/data/notices";
 import { publications } from "@/data/publications";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-blue-800 text-white">
-        <MoleculePattern className="pointer-events-none absolute -right-16 -top-16 h-[420px] w-[420px] text-white/25 sm:h-[520px] sm:w-[520px]" />
+        <HeroGraphic className="pointer-events-none absolute -right-10 -top-12 h-[400px] w-[400px] text-white/30 sm:h-[480px] sm:w-[480px]" />
         <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
           <p className="text-lg font-medium tracking-widest text-blue-200 uppercase">
             {site.university} · {site.department}
