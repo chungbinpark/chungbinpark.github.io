@@ -12,17 +12,17 @@ export default function Home() {
     <>
       <section className="relative overflow-hidden bg-blue-800 text-white">
         <MoleculePattern className="pointer-events-none absolute -right-16 -top-16 h-[420px] w-[420px] text-white/25 sm:h-[520px] sm:w-[520px]" />
-        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
+        <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
           <p className="text-lg font-medium tracking-widest text-blue-200 uppercase">
             {site.university} · {site.department}
           </p>
-          <h1 className="mt-4 max-w-2xl text-6xl font-bold tracking-tight sm:text-7xl">
+          <h1 className="mt-3 max-w-2xl text-6xl font-bold tracking-tight sm:text-7xl">
             {site.name}
           </h1>
-          <p className="mt-6 max-w-xl text-2xl leading-relaxed text-blue-100">
+          <p className="mt-4 max-w-xl text-2xl leading-relaxed text-blue-100">
             {site.tagline}
           </p>
-          <div className="mt-10 flex gap-4">
+          <div className="mt-6 flex gap-4">
             <Link
               href="/research"
               className="rounded-md bg-white px-5 py-3 text-base font-semibold text-blue-800 hover:bg-blue-50"
