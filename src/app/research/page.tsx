@@ -21,15 +21,13 @@ export default function ResearchPage() {
   return (
     <>
       <div className="bg-blue-50">
-        <div className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">
-          <div className="relative aspect-[1774/887] w-full overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/research-banner.webp"
-              alt="AI-Integrated Molecular Simulation: molecular systems studied, the AI-simulation feedback loop, and resulting insights"
-              className="absolute inset-0 h-full w-full object-contain"
-            />
-          </div>
+        <div className="relative aspect-[1774/887] max-h-[420px] w-full overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/research-banner.webp"
+            alt="AI-Integrated Molecular Simulation: molecular systems studied, the AI-simulation feedback loop, and resulting insights"
+            className="absolute inset-0 h-full w-full object-contain"
+          />
         </div>
         <div className="mx-auto max-w-4xl px-4 pb-8 pt-4 sm:px-6">
           <p className="text-sm font-semibold tracking-widest text-blue-700 uppercase">
