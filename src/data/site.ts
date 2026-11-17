@@ -1,6 +1,8 @@
 export const site = {
-  name: "Computational Chemistry Lab",
-  fullTitle: "Computational Chemistry Lab @ KNUE",
+  name: "AIMS Lab",
+  nameFull: "AI-Integrated Molecular Simulation Lab",
+  fullTitle: "AIMS Lab @ KNUE",
+  subtitle: "AI-Integrated Molecular Simulation",
   university: "Korea National University of Education",
   universityAbbr: "KNUE",
   department: "Department of Chemistry Education",
@@ -10,7 +12,7 @@ export const site = {
   github: "https://github.com/chungbinpark",
   scholarUrl: "https://scholar.google.com/citations?user=REPLACE_ME",
   tagline:
-    "Molecular dynamics simulations of soft matter, ionic materials, and biopolymers",
+    "Exploring molecular structure, dynamics, and function through simulation and AI.",
 } as const;
 
 export const nav = [

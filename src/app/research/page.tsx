@@ -24,7 +24,7 @@ export default function ResearchPage() {
       <PageHero title="Research" subtitle="Research Areas" />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <p className="text-lg leading-relaxed text-slate-600">
-          The Computational Chemistry Lab uses molecular dynamics (MD)
+          AIMS Lab uses molecular dynamics (MD)
           simulations to investigate the dynamics of soft matter, ionic
           materials, and biopolymers at the atomic and molecular scale. We aim
           to reveal microscopic mechanisms that are difficult to observe

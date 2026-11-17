@@ -9,37 +9,44 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-blue-800 text-white">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/hero-graphic.webp"
-          alt=""
-          className="pointer-events-none absolute right-0 top-0 h-full w-auto object-cover opacity-90"
-        />
-        <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
-          <p className="text-lg font-medium tracking-widest text-blue-200 uppercase">
-            {site.university} · {site.department}
-          </p>
-          <h1 className="mt-3 max-w-2xl text-6xl font-bold tracking-tight sm:text-7xl">
-            {site.name}
-          </h1>
-          <p className="mt-4 max-w-xl text-2xl leading-relaxed text-blue-100">
-            {site.tagline}
-          </p>
-          <div className="mt-6 flex gap-4">
-            <Link
-              href="/research"
-              className="rounded-md bg-white px-5 py-3 text-base font-semibold text-blue-800 hover:bg-blue-50"
-            >
-              Explore Research
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-md border border-white/50 px-5 py-3 text-base font-semibold text-white hover:border-white"
-            >
-              Contact
-            </Link>
+      <section className="bg-blue-50">
+        <div className="relative aspect-[1920/823] max-h-[560px] w-full overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/hero-banner.webp"
+            alt="AIMS Lab — AI-Integrated Molecular Simulation"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 flex items-center justify-center px-4">
+            <div className="max-w-2xl text-center">
+              <p className="text-sm font-semibold tracking-widest text-blue-700 uppercase sm:text-base">
+                {site.university} · {site.department}
+              </p>
+              <h1 className="mt-2 text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+                {site.name}
+              </h1>
+              <p className="mt-3 text-xl font-semibold text-blue-900 italic sm:text-2xl">
+                {site.subtitle}
+              </p>
+              <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-slate-600 sm:text-lg">
+                {site.tagline}
+              </p>
+            </div>
           </div>
+        </div>
+        <div className="mx-auto flex max-w-6xl justify-center gap-4 px-4 py-8 sm:px-6">
+          <Link
+            href="/research"
+            className="rounded-md bg-blue-800 px-5 py-3 text-base font-semibold text-white hover:bg-blue-900"
+          >
+            Explore Research
+          </Link>
+          <Link
+            href="/contact"
+            className="rounded-md border border-blue-800/40 px-5 py-3 text-base font-semibold text-blue-900 hover:border-blue-800"
+          >
+            Contact
+          </Link>
         </div>
       </section>
 
