@@ -1,5 +1,4 @@
 import Link from "next/link";
-import HeroGraphic from "@/components/HeroGraphic";
 import { site } from "@/data/site";
 import { notices } from "@/data/notices";
 import { publications } from "@/data/publications";
@@ -11,7 +10,12 @@ export default function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-blue-800 text-white">
-        <HeroGraphic className="pointer-events-none absolute -right-10 -top-12 h-[400px] w-[400px] text-white/30 sm:h-[480px] sm:w-[480px]" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hero-graphic.webp"
+          alt=""
+          className="pointer-events-none absolute right-0 top-0 h-full w-auto object-cover opacity-90"
+        />
         <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
           <p className="text-lg font-medium tracking-widest text-blue-200 uppercase">
             {site.university} · {site.department}
