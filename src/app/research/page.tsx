@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = { title: "Research" };
 
@@ -21,7 +20,26 @@ const topics = [
 export default function ResearchPage() {
   return (
     <>
-      <PageHero title="Research" subtitle="Research Areas" />
+      <div className="bg-blue-50">
+        <div className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">
+          <div className="relative aspect-[1774/887] w-full overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/research-banner.webp"
+              alt="AI-Integrated Molecular Simulation: molecular systems studied, the AI-simulation feedback loop, and resulting insights"
+              className="absolute inset-0 h-full w-full object-contain"
+            />
+          </div>
+        </div>
+        <div className="mx-auto max-w-4xl px-4 pb-8 pt-4 sm:px-6">
+          <p className="text-sm font-semibold tracking-widest text-blue-700 uppercase">
+            Research Areas
+          </p>
+          <h1 className="mt-2 text-4xl font-bold text-slate-900 sm:text-5xl">
+            Research
+          </h1>
+        </div>
+      </div>
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <p className="text-lg leading-relaxed text-slate-600">
           AIMS Lab uses molecular dynamics (MD)

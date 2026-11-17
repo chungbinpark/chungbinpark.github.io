@@ -10,27 +10,29 @@ export default function Home() {
   return (
     <>
       <section className="bg-blue-50">
-        <div className="relative aspect-[1920/823] max-h-[560px] w-full overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/hero-banner.webp"
-            alt="AIMS Lab — AI-Integrated Molecular Simulation"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 flex items-center justify-center px-4">
-            <div className="max-w-2xl text-center">
-              <p className="text-sm font-semibold tracking-widest text-blue-700 uppercase sm:text-base">
-                {site.university} · {site.department}
-              </p>
-              <h1 className="mt-2 text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
-                {site.name}
-              </h1>
-              <p className="mt-3 text-xl font-semibold text-blue-900 italic sm:text-2xl">
-                {site.subtitle}
-              </p>
-              <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-slate-600 sm:text-lg">
-                {site.tagline}
-              </p>
+        <div className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">
+          <div className="relative aspect-[1920/823] w-full overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/hero-banner.webp"
+              alt="AIMS Lab — AI-Integrated Molecular Simulation"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center px-4">
+              <div className="max-w-2xl text-center">
+                <p className="text-xs font-semibold tracking-widest text-blue-700 uppercase sm:text-sm">
+                  {site.university} · {site.department}
+                </p>
+                <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                  {site.name}
+                </h1>
+                <p className="mt-2 text-base font-semibold text-blue-900 italic sm:text-xl">
+                  {site.subtitle}
+                </p>
+                <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-slate-600 sm:text-lg">
+                  {site.tagline}
+                </p>
+              </div>
             </div>
           </div>
         </div>
